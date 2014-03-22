@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Manqala</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_string">Mancala</string>
+	<string name="pit1">Pit 1</string>
+	<string name="player1pit1Value">5</string>
+	<string name="player2pit1Value">5</string>
+	<string name="pit2">Pit 2</string>
+	<string name="player1pit2Value">5</string>
+	<string name="player2pit2Value">5</string>
+	<string name="pit3">Pit 3</string>
+	<string name="pit4">Pit 4</string>
+	<string name="pit5">Pit 5</string>
+	<string name="initialVal">5</string>
+	<string name="capValP1">Player 1 Capture:0</string>
+	<string name="capValP2">Player 2 Capture:0</string>
+	<string name="player2Opt">Player 2 selected:</string>
+	<string name="obj">Objective: is to capture 26 or more number of points</string>
+	<string name="bonus">Bonus:
+If you captured a pit and the previous pit also has 2 or 3 points you that pit too. </string>
+	<string name="capture">How to capture points?
+	    You are player 1. you need to choice a pit number by clicking the 
+	    pit number. Once you select the pit number and number of points in the pit will be 
+	    distributed in anti clockwise direction. When you place the point in 
+	    the pit. If the pit contains 2 or 3 points then you capture that pit.</string>
+</resources>

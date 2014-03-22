@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+    <TextView 
+        android:id="@+id/playerCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/TitleLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/capValP1"
+        />
+ <!--first button complete layout  -->
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerCapture"
+        android:layout_toLeftOf="@+id/pitP11"
+        android:text="@string/pit1" 
+        android:onClick="onPressed"/>
+
+    <TextView
+        android:id="@+id/pitP11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button11"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignLeft="@+id/TitleLabel"
+        android:text="@string/player1pit1Value"
+        android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/pitP21"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button11"
+         android:layout_alignBottom="@+id/button11"
+         android:layout_alignRight="@+id/TitleLabel"
+         android:layout_marginRight="19dp"
+         android:text="@string/player2pit1Value"
+         android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/button21"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/pitP21"
+         android:layout_alignBottom="@+id/pitP21"
+         android:layout_alignLeft="@+id/pitP21"
+         android:layout_marginLeft="18dp"
+         android:text="@string/pit1" />
+     
+     
+     <!-- Button 2 -->
+     <Button
+         android:id="@+id/button12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button11"
+         android:layout_below="@+id/button11" 
+         android:text="@string/pit2"
+         android:onClick="onPressed"/>
+
+     <TextView
+         android:id="@+id/pitP12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button12"
+         android:layout_alignBottom="@+id/button12"
+         android:layout_alignLeft="@+id/pitP11"
+         android:text="@string/player1pit2Value"
+         android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/button22"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/pitP12"
+         android:layout_alignBottom="@+id/pitP12"
+         android:layout_alignLeft="@+id/button21"
+         android:text="@string/pit2" />
+
+     <TextView
+         android:id="@+id/pitP22"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button22"
+         android:layout_alignBottom="@+id/button22"
+         android:layout_alignLeft="@+id/pitP21"
+         android:text="@string/player2pit2Value"
+         android:textSize="25sp" />
+     
+     <!-- Button 3 -->
+     <Button
+         android:id="@+id/button13"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button11"
+         android:layout_below="@+id/button12" 
+         android:text="@string/pit3"
+         android:onClick="onPressed"/>
+      <Button
+         android:id="@+id/button23"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button13"
+         android:layout_alignBottom="@+id/pitP13"
+         android:layout_alignLeft="@+id/button21"
+         android:text="@string/pit3" />
+<!-- Button 4 -->
+     <Button
+         android:id="@+id/button14"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button11"
+         android:layout_below="@+id/button13" 
+         android:text="@string/pit4"
+         android:onClick="onPressed"/>
+<!-- Button 5 -->
+     <Button
+         android:id="@+id/button15"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button14"
+         android:layout_below="@+id/button14" 
+         android:text="@string/pit5"
+         android:onClick="onPressed"/>
+
+     <TextView
+         android:id="@+id/pitP23"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button13"
+         android:layout_alignBottom="@+id/button13"
+         android:layout_alignLeft="@+id/pitP12"
+         android:text="@string/player1pit2Value"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/pitP13"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/pitP23"
+         android:layout_alignBottom="@+id/pitP23"
+         android:layout_alignLeft="@+id/pitP22"
+         android:text="@string/player2pit2Value"
+         android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/button25"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button23"
+         android:layout_below="@+id/button14"
+         android:text="@string/pit5" />
+
+     <Button
+         android:id="@+id/button24"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button23"
+         android:layout_below="@+id/button23"
+         android:text="@string/pit4" />
+
+     <TextView
+         android:id="@+id/pitP15"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button15"
+         android:layout_alignBottom="@+id/button15"
+         android:layout_alignLeft="@+id/pitP23"
+         android:text="@string/player1pit2Value"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/pitP25"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button25"
+         android:layout_alignBottom="@+id/button25"
+         android:layout_alignLeft="@+id/pitP13"
+         android:text="@string/player2pit2Value"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/pitP24"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button24"
+         android:layout_alignBottom="@+id/button24"
+         android:layout_alignLeft="@+id/pitP25"
+         android:text="@string/player2pit2Value"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/pitP14"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button14"
+         android:layout_alignBottom="@+id/button14"
+         android:layout_alignLeft="@+id/pitP15"
+         android:text="@string/player1pit2Value"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/player2Capture"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_alignLeft="@+id/playerCapture"
+         android:layout_below="@+id/button15"
+         android:text="@string/capValP2" />
+     <TextView
+         android:id="@+id/TitleLabel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:text="@string/title_string"
+         android:textAlignment="center"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TextView
+         android:id="@+id/moveMade"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/pitP25"
+         android:layout_below="@+id/player2Capture"
+         android:layout_marginTop="22dp"
+         android:text="@string/player2Opt" />
+
+</RelativeLayout>
