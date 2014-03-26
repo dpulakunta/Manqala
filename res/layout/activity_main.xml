@@ -232,4 +232,33 @@
          android:layout_marginTop="22dp"
          android:text="@string/player2Opt" />
 
+     <Button
+         android:id="@+id/rulesButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/player2Capture"
+         android:layout_marginRight="18dp"
+         android:layout_toLeftOf="@+id/moveMade"
+         android:onClick="showRules"
+         android:text="@string/rules" />
+
+     <Button
+         android:id="@+id/newGame"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/rulesButton"
+         android:layout_below="@+id/rulesButton"
+         android:text="@string/newGameString" 
+         android:onClick="newGameString"/>
+
+     <Button
+         android:id="@+id/player2Move"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button25"
+         android:layout_below="@+id/moveMade" 
+         android:text="@string/player2"
+         android:onClick="player2Move"
+         />
+
 </RelativeLayout>
